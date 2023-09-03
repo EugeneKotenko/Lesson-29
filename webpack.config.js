@@ -9,7 +9,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "[name][fullhash].js",
     clean: true,
-    publicPath: "./",
   },
   module: {
     rules: [
@@ -25,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
@@ -36,20 +35,12 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name][fullhash].css",
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: "static",
-          to: "static",
-        },
-      ],
-    }),
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname,'dist'),
+      directory: path.join(__dirname, "dist"),
     },
     port: 5559,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
 };
