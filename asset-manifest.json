@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EugeneKotenko/Lesson-29/static/css/main.e80fd63e.css",
+    "main.js": "/EugeneKotenko/Lesson-29/static/js/main.44a046c4.js",
+    "index.html": "/EugeneKotenko/Lesson-29/index.html",
+    "main.e80fd63e.css.map": "/EugeneKotenko/Lesson-29/static/css/main.e80fd63e.css.map",
+    "main.44a046c4.js.map": "/EugeneKotenko/Lesson-29/static/js/main.44a046c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e80fd63e.css",
+    "static/js/main.44a046c4.js"
+  ]
+}
